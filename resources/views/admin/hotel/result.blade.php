@@ -68,6 +68,6 @@
         if (confirmed) {
             form.submit();
         }
-        return false; // Prevent form submission until confirmed
+        return false; 
     }
 </script>
