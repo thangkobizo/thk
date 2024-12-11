@@ -40,3 +40,7 @@ td {
 li {
     list-style:none;
 }
+
+.text-danger {
+    color: red;
+}

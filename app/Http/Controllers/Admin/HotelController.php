@@ -40,12 +40,11 @@ class HotelController extends Controller
     }
 
 
-    /** post methods */
 
     public function searchResult(Request $request): View
     {
         $validated = $request->validate([
-            'hotel_name' => 'nullable|string|max:255',
+            'hotel_name' => 'required|string|max:255',
             'prefecture_id' => 'nullable|exists:prefectures,prefecture_id',
         ]);
 
